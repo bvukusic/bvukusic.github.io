@@ -1,38 +1,97 @@
 .App {
-  text-align: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#080808, #1f1f1f);
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 15%;
+    letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 35px;
+    line-height: 0px;
+    height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+    display: flex;
+    font-size: 18px;
+    line-height: 0px;
+    height: 30px;
+    color: rgb(246, 47, 147);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.body {
+    display: flex;
+    flex-shrink: 1;
+    max-width: 600px;
+    padding-top: 60px;
+}
+
+.work {
+    display: flex;
+    flex-shrink: 1;
+    max-width: 600px;
+}
+
+.projects {
+    display: flex;
+    flex-shrink: 1;
+    max-width: 600px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 100px;
+}
+
+.contact:hover {
+    color: yellow;
+}
+
+.contact a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+.contact a:visited {
+    color: white;
+}
+
+.contact a:hover {
+    color: rgb(246, 47, 147);
+    transition: color .2s ease-in-out;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: rgb(246, 47, 147);
+    transition: color .2s ease-in-out;
+}
+
+
+/* selected link */
+
+.contact a:active {
+    color: rgb(246, 47, 147);
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    color: white;
 }
