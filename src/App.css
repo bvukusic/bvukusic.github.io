@@ -1,97 +1,126 @@
 .App {
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(#080808, #1f1f1f);
-    color: white;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-    padding-top: 15%;
-    letter-spacing: 0.5px;
-    font-weight: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(-45deg, #161853, #292c6d);
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  padding-top: 10%;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-shadow: 2px 2px 4px #000000ca;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: rgb(172, 28, 100);
+  height: 1px;
+  width: 300px;
 }
 
 .name {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 35px;
-    line-height: 0px;
-    height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 35px;
+  line-height: 0px;
+  height: 56px;
 }
 
 .title {
-    display: flex;
-    font-size: 18px;
-    line-height: 0px;
-    height: 30px;
-    color: rgb(246, 47, 147);
+  display: flex;
+  font-size: 18px;
+  line-height: 0px;
+  height: 20px;
+  color: #ec255a;
 }
 
 .body {
-    display: flex;
-    flex-shrink: 1;
-    max-width: 600px;
-    padding-top: 60px;
+  display: flex;
+  flex-shrink: 1;
+  max-width: 500px;
+  padding-top: 30px;
+  line-height: 25px;
 }
 
 .work {
-    display: flex;
-    flex-shrink: 1;
-    max-width: 600px;
+  display: flex;
+  flex-shrink: 1;
+  max-width: 500px;
+  line-height: 25px;
 }
 
 .projects {
-    display: flex;
-    flex-shrink: 1;
-    max-width: 600px;
+  display: flex;
+  flex-shrink: 1;
+  max-width: 400px;
 }
 
 .contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 300px;
-    padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  padding-top: 40px;
 }
 
 .contact:hover {
-    color: yellow;
+  color: yellow;
+  text-shadow: 2px 2px 4px #0000003a;
+}
+
+.contact a {
+  color: #ec255a;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #0000003a;
 }
 
 .contact a:link {
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #0000003a;
 }
 
-
-/* visited link */
-
 .contact a:visited {
-    color: white;
+  color: rgba(187, 0, 100, 0);
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #0000003a;
 }
 
 .contact a:hover {
-    color: rgb(246, 47, 147);
-    transition: color .2s ease-in-out;
+  color: #f64575;
+  transition: color 0.1s ease-in-out;
+  text-shadow: 2px 2px 4px #0000009a;
 }
 
-
-/* mouse over link */
+.body a:hover {
+  color: #f64575;
+  transition: color 0.1s ease-in-out;
+  text-shadow: 2px 2px 4px #0000009a;
+}
 
 a:hover {
-    color: rgb(246, 47, 147);
-    transition: color .2s ease-in-out;
-}
-
-
-/* selected link */
-
-.contact a:active {
-    color: rgb(246, 47, 147);
+  transition: color 0.1s ease-in-out;
 }
 
 .App-link {
-    color: white;
+  color: white;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #ec255a;
+  height: 1px;
+  width: 300px;
 }
